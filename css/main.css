@@ -1,42 +1,9 @@
-/* Hero block */
-
-#big-logo {
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
-}
-
-.hero-block h1 {
-    box-sizing: border-box;
-    margin-top: 20px;
-}
-
-.hero-block h2 {
-    color: #ffffffb2;
-}
-
-.hero-block {
-    background-image: url(../assets/Hero_background.png);
-    height: 526px;
-    margin: 0 auto;
-    padding-top: 274px;
-    width: 1200px;
-}
-
-button {
-    background-color: #55c2d8;
-    display: block;
-    font-family: Oswald Regular;
-    margin: 50px auto;
-    text-transform: uppercase;
-}
-
 /* Headline block */
 
 .headline {
     background-color: #eeeeee;
     box-sizing: border-box;
-    padding: 90px 97px 50px 120px;
+    padding: 90px 143px 50px 150px;
 }
 
 .headline h1 {
@@ -45,6 +12,10 @@ button {
 
 .headline h2 {
     color: #666666;
+}
+
+div.container p {
+    width: 410px;
 }
 
 .headline button {

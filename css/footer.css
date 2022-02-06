@@ -1,9 +1,44 @@
 footer {
     background-color: #464547;
     box-sizing: border-box;
-    height: 170px;
-    padding-left: 140px;
+    height: 199px;
+    padding: 37px 148px 75px 153px;
     width: 1200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.grid-container * {
+    justify-self: start;
+}
+
+.project-logo {
+    align-self: start;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: start;
+}
+
+.contacts {
+    align-self: start;
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+.e-mail {
+    align-self: end;
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.copyright {
+    align-self: end;
+    grid-column: 6/8;
+    grid-row: 2/3;
 }
 
 .project-logo {
@@ -21,7 +56,9 @@ footer {
     margin-left: 16px;
 }
 
-.contacts {
+.contacts,
+.copyright,
+footer a:-webkit-any-link {
     color: rgba(255, 255, 255, 0.4);
     font-size: 16px;
     font-style: normal;

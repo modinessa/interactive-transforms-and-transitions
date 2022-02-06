@@ -138,11 +138,6 @@ button:focus {
     outline: none;
 }
 
-a:-webkit-any-link {
-    color: rgba(255, 255, 255, 0.4);
-    text-decoration: none;
-}
-
 /* My CSS */
 
 body {
@@ -152,14 +147,14 @@ body {
 
 h1,
 h2,
-h3,
-p {
+h3 {
     text-align: center;
     font-style: normal;
 }
 
 h2,
 p,
+nav,
 footer {
     font-family: Source Sans Pro;
 }
@@ -178,15 +173,27 @@ h2 {
 }
 
 p {
+    color: #666666;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 20px;
+    margin-top: 45px;
+    text-align: left;
 }
 
 .white-text {
-    color: #ffffff;
+    color: white;
 }
 
 button {
     cursor: pointer;
+    background-color: #55c2d8;
+    display: block;
+    font-family: Oswald Regular;
+    margin: 50px auto;
+    text-transform: uppercase;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
 }
