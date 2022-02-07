@@ -1,5 +1,5 @@
 footer {
-    background-color: #464547;
+    background-color: var(--footer-background);
     box-sizing: border-box;
     height: 199px;
     padding: 37px 140px 0 153px;
@@ -57,7 +57,7 @@ footer {
 .contacts,
 .copyright,
 footer a:-webkit-any-link {
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--footer-text);
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
