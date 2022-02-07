@@ -142,7 +142,7 @@ button:focus {
 
 body {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 h1,
@@ -187,7 +187,7 @@ p {
 button {
     cursor: pointer;
     background-color: #55c2d8;
-    display: block;
+    /* display: block; */
     font-family: Oswald Regular;
     margin: 50px auto;
     text-transform: uppercase;
@@ -196,4 +196,10 @@ button {
 a:-webkit-any-link {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 768px) {
+    html {
+        min-width: 480px;
+    }
 }
