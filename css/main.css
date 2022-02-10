@@ -3,7 +3,7 @@
 .headline {
     background-color: var(--main-background);
     box-sizing: border-box;
-    padding: 90px 143px 50px 150px;
+    padding: 90px 103px 50px 110px;
 }
 
 .headline h1 {
@@ -15,8 +15,15 @@
     margin-top: 40px;
 }
 
-div.container p {
-    width: 410px;
+.headLine_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.headLine_container p {
+    width: 100%;
+    padding: 0 40px;
+    flex: 1;
 }
 
 .headline button {
@@ -83,9 +90,14 @@ div.container p {
         text-align: left;
     }
 
-    div.container {
+    .headLine_container {
         display: block;
-        width: 440px;
+        width: 100%;
+    }
+
+    .headLine_container p {
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .headline button {

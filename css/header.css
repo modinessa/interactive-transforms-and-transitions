@@ -59,6 +59,19 @@ span:nth-child(3) {
     letter-spacing: 0.2em;
 }
 
+.menu > li {
+    padding-left: 25px;
+}
+
+.menu > li a:hover {
+    text-decoration: underline;
+    /*
+    Doesn't work :`(
+    
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px; */
+}
+
 /* Hero block */
 
 #big-logo {
