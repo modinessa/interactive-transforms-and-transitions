@@ -5,7 +5,7 @@ header {
 
 nav {
     box-sizing: border-box;
-    color: white;
+    color: var(--white-text);
     height: 35px;
     position: absolute;
     padding: 50px 400px 0 150px;
@@ -28,16 +28,25 @@ nav {
     letter-spacing: 0.1em;
 }
 
-.nav-toggle {
+.app-header__nav-menu-button {
     display: none;
 }
 
-.nav-toggle {
-    background: transparent;
-    color: white;
-    font-size: 25px;
-    font-weight: 100;
-    margin: 0;
+.app-header__nav-menu-button-icon {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+span:nth-child(1),
+span:nth-child(2),
+span:nth-child(3) {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white-text);
+    margin: 3px 0;
+    border-radius: 1px;
 }
 
 .menu {
@@ -48,6 +57,19 @@ nav {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.2em;
+}
+
+.menu > li {
+    padding-left: 25px;
+}
+
+.menu > li a:hover {
+    text-decoration: underline;
+    /*
+    Doesn't work :`(
+    
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px; */
 }
 
 /* Hero block */
@@ -64,7 +86,7 @@ nav {
 }
 
 .hero-block h2 {
-    color: #ffffffb2;
+    color: var(--hero-header2);
 }
 
 .hero-block {
@@ -89,7 +111,7 @@ nav {
         display: none;
     }
 
-    .nav-toggle {
+    .app-header__nav-menu-button {
         display: block;
     }
 }
