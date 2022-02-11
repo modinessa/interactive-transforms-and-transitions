@@ -1,0 +1,39 @@
+#big-logo {
+    transform: scale(1, 1) rotateY(0deg);
+    transform-origin: center;
+    transition: all 1s;
+}
+
+#big-logo:hover {
+    transform: scale(1.8, 1.8) rotateY(180deg);
+}
+
+#read-more {
+    transform: rotateZ(0);
+    transform-origin: left center;
+    transition: transform 1s;
+}
+
+#read-more:hover {
+    transform: rotateZ(15deg);
+}
+
+/* .preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+} */
+
+#play {
+    transform: scale(1, 1);
+    background-color: var(--blue);
+    color: var(--white-text);
+    transition: color 2s, background-color 2s, transform 2s;
+}
+
+#play:hover {
+    transform: scale(1.1, 1.1);
+    background-color: var(--white-text);
+    color: var(--blue);
+}
