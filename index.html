@@ -12,9 +12,16 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/transforms.css">
     <title>Document</title>
+    <!-- Prevent transition on load page -->
+    <script>$(window).load(function ()
+        {
+            $("body").removeClass("preload");
+        });
+        </script>
 </head>
-<body>
+<body class="preload">
         
         <header>
                 <nav class="container">
@@ -94,7 +101,7 @@
                         anim id est laborum.
                     </p>
                 </div>
-                <button class="btn white-text">Read more</button>
+                <button class="btn white-text" id="read-more">Read more</button>
             </div>
 
             <section class="learn-more">
@@ -103,7 +110,7 @@
                     <h1 class="white-text">Learn more<br>
                 about our culture...</h1>
                 
-                    <button class="btn white-text">
+                    <button class="btn white-text" id="play">
                         <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
                     <h2 class="white-text">Duis aute irure dolor in        reprehenderit in<br>
