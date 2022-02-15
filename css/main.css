@@ -1,0 +1,123 @@
+/* Headline block */
+
+.headline {
+    background-color: var(--main-background);
+    box-sizing: border-box;
+    padding: 90px 103px 50px 110px;
+}
+
+.headline h1 {
+    color: var(--dark-grey-text);
+}
+
+.headline h2 {
+    color: var(--light-grey-text);
+    margin-top: 40px;
+}
+
+.headLine_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.headLine_container p {
+    width: 100%;
+    padding: 0 40px;
+    flex: 1;
+}
+
+.headline button {
+    border-radius: 18px;
+    display: block;
+    width: 115px;
+    height: 36px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+}
+
+/* Learn more block */
+
+.learn-more {
+    box-sizing: border-box;
+    height: 666px;
+    position: relative;
+}
+
+.learn-more h1 {
+    padding-top: 90px;
+}
+
+.video {
+    background-image: url(../assets/Learn_more_background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlap {
+    background: var(--main-overlap);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.learn-more button {
+    border-radius: 50%;
+    display: block;
+    font-size: 60px;
+    height: 145px;
+    margin-bottom: 65px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    width: 145px;
+}
+
+@media (max-width: 768px) {
+    .headline {
+        padding: 65px 23px 116px 27px;
+    }
+
+    .headline h1,
+    .headline h2,
+    .headline p {
+        text-align: left;
+    }
+
+    .headLine_container {
+        display: block;
+        width: 100%;
+    }
+
+    .headLine_container p {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .headline button {
+        display: inline;
+        margin: 50px 0 0 0;
+    }
+
+    .learn-more button {
+        height: 100px;
+        width: 100px;
+        font-size: 45px;
+        padding-left: 20px;
+        margin-bottom: 82px;
+    }
+
+    .learn-more h1 {
+        padding-top: 72px;
+    }
+
+    .learn-more button {
+        margin-top: 91px;
+    }
+}
